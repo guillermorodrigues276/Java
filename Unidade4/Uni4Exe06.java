@@ -5,7 +5,7 @@ public class Uni4Exe06 {
 
         Scanner input = new Scanner(System.in);
 
-        String M, F, I, variavel;
+        String variavel;
         System.out.println("Qual o gênero?");
 
         variavel = input.nextLine();

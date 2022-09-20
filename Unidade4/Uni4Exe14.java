@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthStyleFactory;
-
 public class Uni4Exe14 {
     public static void main(String[] args) {
 
@@ -46,5 +44,6 @@ public class Uni4Exe14 {
             System.out.println();
             System.out.println("Data invalida");
         }
+        input.close();
     }
 }

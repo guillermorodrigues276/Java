@@ -13,5 +13,6 @@ public class Uni4Exe05 {
         } else if (variavel.equals("Nao")) {
             System.out.println("Não");
         }
+        input.close();
     }
 }

@@ -16,6 +16,6 @@ public class Uni4Exe02 {
         } else {
             System.out.println("Numero é impar");
         }
-
+        input.close();
     }
 }
