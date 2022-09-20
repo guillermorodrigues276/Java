@@ -25,7 +25,7 @@ public class Uni4Exe18 {
             System.out.println("O pagamento está levemente atrasado e o valor será: R$ " + (valorPrestacao)
                     + " Sem descontos aplicados.");
         } else if (diasAtraso > 5) {
-            multa = diasAtraso * 0.2;
+            multa = valorPrestacao * diasAtraso * 0.2;
             valorPrestacao = valorPrestacao + multa;
             System.out.println("O pagamento está atrasado e o valor será: R$ " + (valorPrestacao) + " Com " + diasAtraso
                     + " dias de atraso.");

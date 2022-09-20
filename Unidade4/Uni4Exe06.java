@@ -15,7 +15,7 @@ public class Uni4Exe06 {
         } else if (variavel.equals("F")) {
             System.out.println("Feminino");
         } else if (variavel.equals("I")) {
-            System.out.println("Entrada Incorreta");
+            System.out.println("Não Informado");
         } else {
             System.out.println("Entrada Incorreta");
         }
