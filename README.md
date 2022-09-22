@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://w7.pngwing.com/pngs/917/862/png-transparent-java-programmer-computer-programming-logo-others-miscellaneous-text-logo.png" alt="Logo" width="250">
+  <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-14-logo.png" alt="Logo" width="250">
   <br>
   A repository to learning Java
   <br>
