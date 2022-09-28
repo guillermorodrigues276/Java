@@ -102,7 +102,7 @@ Uma máquina de biscoito está com problemas. Quando ligada, após 1 hora ela qu
 
 Escreva um programa que leia um número inteiro positivo **n** e em seguida imprima **n** linhas do chamado Triangulo de Floyd:
 
-![Triangulo de Floyd](fluxogramas/TrianguloFloyd.svg)
+![Triangulo de Floyd](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade5/fluxogramas/TrianguloFloyd.svg)
 
 ---
 
