@@ -12,7 +12,7 @@ Utilize o nome do arquivo Java e da Classe de acordo com o indicado no inicio de
 
 A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o valor por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe01](fluxogramas/Uni4Exe01.svg "Uni4Exe01")  
+![Uni4Exe01](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe01.svg)  
 
 ----------
 
@@ -22,7 +22,7 @@ Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma
 
 Dado um valor inteiro maior do que 0 informe se o valor é par ou ímpar.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe02](fluxogramas/Uni4Exe02.svg "Uni4Exe02")  
+![Uni4Exe02](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe02.svg)  
 
 ----------
 
@@ -42,7 +42,7 @@ Dado um número de ponto flutuante maior do que 0, informe se foram digitadas ou
 
 Dada uma pergunta, “a cor é azul?”, faça um programa que leia uma variável lógica com a resposta e responda “Sim”, caso a resposta seja true, ou “Não”, caso seja false.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe05](fluxogramas/Uni4Exe05.svg "Uni4Exe05")  
+![Uni4Exe05](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe05.svg) 
 
 ----------
 
@@ -56,7 +56,7 @@ Faça um algoritmo que leia um caractere. Caso seja digitada a letra 'M' escreva
 
 O custo do selo de uma carta com até 50 gramas é de R$ 0,45. As cartas com peso superior pagam um adicional de R$ 0,45 por cada 20 gramas, ou fração, em que excedem aquele peso. Escreva um algoritmo que dado o peso da carta, em gramas, determine o custo do selo.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe07](fluxogramas/Uni4Exe07.svg "Uni4Exe07")  
+![Uni4Exe07](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe07.svg)  
 
 ----------
 
@@ -66,7 +66,7 @@ Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma
 
 Dado uma letra, escreva um algoritmo que informe se ela é ou não uma vogal.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe08](fluxogramas/Uni4Exe08.svg "Uni4Exe08")  
+![Uni4Exe08](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe08.svg) 
 
 ----------
 
@@ -96,9 +96,9 @@ Dados 3 valores lado1, lado2, lado3, que representam os comprimentos dos lados d
 > um triângulo isóscele tem dois lados iguais e um diferente  
 > um triângulo escaleno tem três lados diferentes  
 
-Se tiveres dúvidas em pensar que quais três lados (segmentos reta) sempre formam um triângulo olhe este PDF: [Uni4Exe12_duvida](fluxogramas/Uni4Exe12_duvida.pdf "Uni4Exe12_duvida")  
+Se tiveres dúvidas em pensar que quais três lados (segmentos reta) sempre formam um triângulo olhe este PDF: [Uni4Exe12_duvida](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe12_duvida.pdf)  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe12](fluxogramas/Uni4Exe12.svg "Uni4Exe12")  
+![Uni4Exe12](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe12.svg)
 
 ----------
 
@@ -107,7 +107,7 @@ Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma
 Escreva um algoritmo que obtém do usuário 3 valores inteiros representando as três cartas deste usuário em uma mão de jogo de truco (1 = AS; 2 = 2; 3 = 3; 7 = 7; 11 = Valete; 12 = Dama; 13 = Rei). O algoritmo deve imprimir na tela a palavra "TRUCO" (se APENAS UMA das três cartas for AS, 2 ou 3), "SEIS" (se APENAS DUAS das três cartas for AS, 2 ou 3) ou "NOVE" (se AS TRÊS cartas forem AS, 2 ou 3). Se não houver AS, 2 ou 3 nas três cartas, não é impresso nada.  
 **Dica**: criar variáveis intermediárias para contar a quantidade de "boas".  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe13](fluxogramas/Uni4Exe13.svg "Uni4Exe13")  
+![Uni4Exe13](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe13.svg)
 
 ----------
 
@@ -115,7 +115,7 @@ Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma
 
 Leia uma data e determine se ela é válida. Ou seja, verifique se o mês está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro tem 29 dias em anos bissextos, e 28 dias em anos não bissextos.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe14](fluxogramas/Uni4Exe14.svg "Uni4Exe14")  
+![Uni4Exe14](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe14.svg) 
 
 ----------
 
@@ -152,7 +152,7 @@ Dadas as coordenadas (X e Y) de um Ponto, você deve informar em qual quadrante 
 > 3, se os dois valores forem negativos  
 > 4, se x for negativo e y, positivo  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe19](fluxogramas/Uni4Exe19.svg "Uni4Exe19")  
+![Uni4Exe19](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe19.svg) 
 
 ----------
 
@@ -205,7 +205,7 @@ Um aluno está em dúvida sobre o título que vai receber após concluir seu cur
 
 Escreva um algoritmo que leia um número inteiro positivo representando um determinado mês do ano e escreva o mês por extenso. Para valores maiores do que 12 informe que o valor não é válido.  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe23](fluxogramas/Uni4Exe23.svg "Uni4Exe23")  
+![Uni4Exe23](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe23.svg) 
 
 ----------
 
@@ -237,7 +237,7 @@ Dado um caractere indicando uma opção, escreva um algoritmo para:
 > se opção = ‘R’: calcular a área de um retângulo de base b e altura h  
 > se opção = ‘C’: calcular a área de um círculo de raio r  
 Para resolver este problema pode se utilizar do algoritmo descrito no fluxograma:  
-![Uni4Exe26](fluxogramas/Uni4Exe26.svg "Uni4Exe26")  
+![Uni4Exe26](https://github.com/robsonsouza10/disciplinaIPNoturno/blob/main/Unidade4/fluxogramas/Uni4Exe26.svg)
 
 ----------
 
