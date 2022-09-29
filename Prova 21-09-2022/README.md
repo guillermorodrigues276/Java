@@ -4,4 +4,6 @@
 
 Ao se considerar que um problema já foi resolvido e dedscrito no fluxograma abaixo, implemente o seu código em java usando o VSCode (ou o editor da sua escolha). Esta implementação deve seguir fielmente o que está representando neste diagrama. Quando se questiona se uma variável do tipo String é vazia significa que a mesma não tem nenhum caractere nela. Caso acha alguma diferença dp seu código fonte para o Fluxograma será descontado 0.5 por erro cometido.
 
-![Fluxograma]
+![Fluxograma](https://github.com/guillermorodrigues276/Java/blob/main/Prova%2021-09-2022/Arquivos%20Secund%C3%A1rios/questao1.png)
+
+
