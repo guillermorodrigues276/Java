@@ -8,11 +8,11 @@ public class Uni5Exe06 {
         double altura, mediaAltura;
         altura = 0;
         mediaAltura = 0;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i < 21; i++) {
             System.out.println("Digite a altura [" + i + "]:");
             altura += input.nextDouble();
             System.out.println();
-            mediaAltura = altura / 5;
+            mediaAltura = altura / 20;
         }
         System.out.println(mediaAltura);
 
