@@ -3,24 +3,25 @@ public class Uni5Exe10 {
 
         int soma = 0;
         int potencia = 0;
-        String terStr1, terStr2;
-        int cont = 0;
+        String termoString1, termoString2;
+        int contador = 0;
 
-        for (int ter1 = 0; ter1 <= 10000; ter1++) {
-            for (int ter2 = 0; ter2 <= 10000; ter2++) {
-                soma = ter1 + ter2;
+        for (int termo1 = 0; termo1 <= 10000; termo1++) {
+            for (int termo2 = 0; termo2 <= 10000; termo2++) {
+                soma = termo1 + termo2;
                 potencia = soma * soma;
-                terStr1 = potencia + "";
-                terStr2 = ter1 + "" + ter2;
-                if (terStr1.equals(terStr2)) {
-                    cont++;
-                    System.out.println("[" + cont + "] " + ter1 + " + " + ter2 + " = " + soma + " -> " + potencia);
-                    if (cont >= 10) {
+                termoString1 = potencia + "";
+                termoString2 = termo1 + "" + termo2;
+                if (termoString1.equals(termoString2)) {
+                    contador++;
+                    System.out.println(
+                            "[" + contador + "] " + termo1 + " + " + termo2 + " = " + soma + " -> " + potencia);
+                    if (contador >= 10) {
                         break;
                     }
                 }
             }
-            if (cont >= 10) {
+            if (contador >= 10) {
                 break;
             }
         }
