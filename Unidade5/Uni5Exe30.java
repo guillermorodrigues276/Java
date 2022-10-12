@@ -66,8 +66,6 @@ public class Uni5Exe30 {
         System.out.println();
         System.out.println("A soma dos elementos que não entraram na mochila é: " + soma2);
 
-
         input.close();
     }
-    
 }
