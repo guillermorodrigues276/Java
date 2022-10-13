@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Uni5Exe30 {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
 
         int n, k, m, i, soma, soma2;
@@ -28,36 +28,36 @@ public class Uni5Exe30 {
 
         int[] vetor = new int[n];
 
-        for(i = 0; i < n; i++){
+        for (i = 0; i < n; i++) {
             vetor[i] = n - i * k;
         }
-        for(i = 0; i < n; i++){
-            if(vetor[i] <= m){
+        for (i = 0; i < n; i++) {
+            if (vetor[i] <= m) {
                 soma += vetor[i];
                 m -= vetor[i];
-            }else{
+            } else {
                 soma2 += vetor[i];
             }
         }
 
         System.out.println("Os elementos a serem colocados na mochila são: ");
 
-        for(i = 0; i < n; i++){
+        for (i = 0; i < n; i++) {
             System.out.println(vetor[i]);
         }
 
         System.out.println("Os elementos que entraram na mochila são: ");
 
-        for(i = 0; i < n; i++){
-            if(vetor[i] <= m){
+        for (i = 0; i < n; i++) {
+            if (vetor[i] <= m) {
                 System.out.println(vetor[i]);
             }
         }
 
         System.out.println("Os elementos que ficaram fora da mochila são: ");
 
-        for(i = 0; i < n; i++){
-            if(vetor[i] > m){
+        for (i = 0; i < n; i++) {
+            if (vetor[i] > m) {
                 System.out.println(vetor[i]);
             }
         }
