@@ -3,15 +3,16 @@ import java.util.Scanner;
 
 public class Uni5Exe33 {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
 
-        //! VARIAVEIS
+        // ! VARIAVEIS
         int voto, votoCandidato1, votoCandidato2, votoCandidato3, votoCandidato4, voto5Nulo, voto6Branco;
-        double total, percentualCandidato1, percentualCandidato2, percentualCandidato3, percentualCandidato4, percentualNulo, percentualBranco, percentualBrancoNulo;
+        double total, percentualCandidato1, percentualCandidato2, percentualCandidato3, percentualCandidato4,
+                percentualNulo, percentualBranco, percentualBrancoNulo;
 
-        //! DECLARAÇÃO VARIAVEIS
+        // ! DECLARAÇÃO VARIAVEIS
         votoCandidato1 = 0;
         votoCandidato2 = 0;
         votoCandidato3 = 0;
@@ -27,8 +28,8 @@ public class Uni5Exe33 {
         percentualBranco = 0.0;
         percentualBrancoNulo = 0.0;
 
-        //! LAÇO REPETIÇÃO (FAÇA-ENQUANTO)
-        do{
+        // ! LAÇO REPETIÇÃO (FAÇA-ENQUANTO)
+        do {
             System.out.println();
             System.out.println("Opção 1 - Candidato 1");
             System.out.println("Opção 2 - Candidato 2");
@@ -39,40 +40,40 @@ public class Uni5Exe33 {
             System.out.println("Opção 0 - Encerrar Votação");
             System.out.println();
 
-            //! VARIAVEL LER VOTO
+            // ! VARIAVEL LER VOTO
             voto = input.nextInt();
 
-            //! OPÇÃO DE VOTO
-            switch(voto){
+            // ! OPÇÃO DE VOTO
+            switch (voto) {
                 case 1:
                     votoCandidato1++;
-                break;
+                    break;
                 case 2:
                     votoCandidato2++;
-                break;
-                case 3: 
+                    break;
+                case 3:
                     votoCandidato3++;
-                break;
+                    break;
                 case 4:
                     votoCandidato4++;
-                break;
+                    break;
                 case 5:
                     voto5Nulo++;
-                break;
+                    break;
                 case 6:
                     voto6Branco++;
-                break;
+                    break;
 
                 default:
                     System.out.println("Opção Incorreta");
                     System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
             }
-        }while(voto != 0); //! ENQUANTO VOTO FOR DIFERENTE DE 0 CONTINUAR REPETINDO
+        } while (voto != 0); // ! ENQUANTO VOTO FOR DIFERENTE DE 0 CONTINUAR REPETINDO
 
-        //! CALCULO DO TOTAL DE VOTOS
+        // ! CALCULO DO TOTAL DE VOTOS
         total = votoCandidato1 + votoCandidato2 + votoCandidato3 + votoCandidato4 + voto5Nulo + voto6Branco;
 
-        //! PORCENTAGEM DE CADA VOTO
+        // ! PORCENTAGEM DE CADA VOTO
         percentualCandidato1 = (votoCandidato1 * 100) / (double) total;
         percentualCandidato2 = (votoCandidato2 * 100) / (double) total;
         percentualCandidato3 = (votoCandidato3 * 100) / (double) total;
@@ -81,7 +82,7 @@ public class Uni5Exe33 {
         percentualBranco = (voto6Branco * 100) / (double) total;
         percentualBrancoNulo = (percentualNulo + percentualBranco);
 
-        //! ESCRITA DO NUMERO DE VOTOS E SUA PORCENTAGEM
+        // ! ESCRITA DO NUMERO DE VOTOS E SUA PORCENTAGEM
         System.out.println("Votos Candidato 1 -> " + votoCandidato1 + " - " + df.format(percentualCandidato1) + "%");
         System.out.println("Votos Candidato 2 -> " + votoCandidato2 + " - " + df.format(percentualCandidato2) + "%");
         System.out.println("Votos Candidato 3 -> " + votoCandidato3 + " - " + df.format(percentualCandidato3) + "%");

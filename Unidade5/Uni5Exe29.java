@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Uni5Exe29 {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
 
         int pagamentoCompra, nota1, nota2, nota5, nota10, nota20, atual;
@@ -12,7 +12,7 @@ public class Uni5Exe29 {
         nota5 = 5;
         nota10 = 10;
         nota20 = 20;
-                
+
         System.out.println("Informe o valor: ");
         pagamentoCompra = input.nextInt();
 

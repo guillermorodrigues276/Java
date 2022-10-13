@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Uni5Exe34 {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
 
         double numeroDiaria, diaria, taxa, diariaComTaxa;
@@ -13,7 +13,7 @@ public class Uni5Exe34 {
         opcao = 0;
         numeroDeConta = 0;
 
-        while(opcao != 3){
+        while (opcao != 3) {
             System.out.println("Opção 1 -> Encerrar a conta de um hóspede");
             System.out.println("Opção 2 -> Verificar número de contas encerradas");
             System.out.println("Opção 3 -> Sair");
@@ -22,7 +22,7 @@ public class Uni5Exe34 {
 
             opcao = input.nextInt();
 
-            switch(opcao){
+            switch (opcao) {
                 case 1:
                     System.out.println("Informe seu nome: ");
                     nome = input.next();
@@ -30,7 +30,7 @@ public class Uni5Exe34 {
                     System.out.println("Informe a quantidade de diárias utilizadas: ");
                     numeroDiaria = input.nextInt();
                     System.out.println();
-                    if(numeroDiaria < 15){
+                    if (numeroDiaria < 15) {
                         taxa = 7.50;
                         diariaComTaxa = (numeroDiaria * diaria) + (numeroDiaria * taxa);
                         System.out.println("Nome: " + nome);
@@ -40,7 +40,7 @@ public class Uni5Exe34 {
                         System.out.println("Total: " + diariaComTaxa);
                         System.out.println();
                         numeroDeConta++;
-                    }else if(numeroDiaria == 15){
+                    } else if (numeroDiaria == 15) {
                         taxa = 6.50;
                         diariaComTaxa = (numeroDiaria * diaria) + (numeroDiaria * taxa);
                         System.out.println("Nome: " + nome);
@@ -50,7 +50,7 @@ public class Uni5Exe34 {
                         System.out.println("Total: " + diariaComTaxa);
                         System.out.println();
                         numeroDeConta++;
-                    }else{
+                    } else {
                         taxa = 5.00;
                         diariaComTaxa = (numeroDiaria * diaria) + (numeroDiaria * taxa);
                         System.out.println("Nome: " + nome);
@@ -62,20 +62,19 @@ public class Uni5Exe34 {
                         numeroDeConta++;
                     }
                     break;
-                    case 2:
-                        System.out.println();
-                        System.out.println("Número de contas encerradas: " + numeroDeConta);
-                        System.out.println();
+                case 2:
+                    System.out.println();
+                    System.out.println("Número de contas encerradas: " + numeroDeConta);
+                    System.out.println();
                     break;
 
                 case 3:
                     System.out.println();
                     System.out.println("Finalizando");
                     System.out.println();
-                break;
+                    break;
             }
         }
         input.close();
-        }
     }
-
+}
