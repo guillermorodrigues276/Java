@@ -7,13 +7,14 @@
 
 <div align="center">
 
-| Java                                                    |
-| :------------------------------------------------------ |
-| [`Hello World`](#hello-world)                           |
-| [`Variables`](#variables)                               |
+| Java |
+| :-| 
+| [`Hello World`](#hello-world)  |
+| [`Variables`](#variables)                               | 
 | [`Math Methods`](#math-methods)                         |
 | [`Conditional in variables`](#conditional-in-variables) |
 | [`Conditional`](#conditional)                           |
+| [`Loops`](#loops) |
 
 </div>
 
