@@ -7,13 +7,14 @@
 
 <div align="center">
 
-| Java                                                    |
-| :------------------------------------------------------ |
-| [`Hello World`](#hello-world)                           |
-| [`Variables`](#variables)                               |
+| Java |
+| :-| 
+| [`Hello World`](#hello-world)  |
+| [`Variables`](#variables)                               | 
 | [`Math Methods`](#math-methods)                         |
 | [`Conditional in variables`](#conditional-in-variables) |
 | [`Conditional`](#conditional)                           |
+| [`Loops`](#loops) |
 
 </div>
 
@@ -80,3 +81,55 @@ if ( price >= 30 && price <= 50 ) { // if price is between 30 and 50
     System.debug('I havent money');
 }
 ```
+
+## Loops
+
+```Java
+// loop with a fixed amount of repetitions
+// syntax for loop
+for (init_stmt; exit_condition; increment_stmt) {
+    code_block
+}
+
+for (int i = 0; i < 10; i++) { // one in one
+    System.out.println(i);
+}
+
+for (int i = 2; i <= 44; i += 2) { // two in two
+    System.out.println(i);
+}
+
+// for a infinity repetitions
+// syntax while loop
+while (condition) {
+    code_block
+}
+
+int z = 0; // declaring variable out of loop
+while (z <= 10) { // one in one
+    System.out.println(z);
+    z++;
+}
+
+while (z <= 40) { // four in four
+    System.out.println(z);
+    z += 4;
+}
+
+//syntax do while loop
+do {
+   code_block
+} while (condition);
+
+int x = 0;
+do { // one in one
+    System.out.println(x);
+    x++;
+} while (x <= 5);
+
+do { // two in two
+    System.out.println(x);
+    x += 2;
+} while (x <= 12);
+```
+
