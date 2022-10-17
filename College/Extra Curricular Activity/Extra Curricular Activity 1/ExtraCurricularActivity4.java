@@ -13,7 +13,7 @@ banana
 
 import java.util.Scanner;
 
-public class AtividadeExtraCurricular4 {
+public class ExtraCurricularActivity4 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

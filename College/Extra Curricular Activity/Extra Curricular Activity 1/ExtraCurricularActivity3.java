@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AtividadeExtraCurricular3 {
+public class ExtraCurricularActivity3 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

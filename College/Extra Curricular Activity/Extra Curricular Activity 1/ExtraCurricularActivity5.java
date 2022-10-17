@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class AtividadeExtraCurricular5 {
+public class ExtraCurricularActivity5 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
