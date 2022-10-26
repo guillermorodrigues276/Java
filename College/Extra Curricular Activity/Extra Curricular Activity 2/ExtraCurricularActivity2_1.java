@@ -7,7 +7,6 @@ public class ExtraCurricularActivity2_1 {
 
         int quantidade;
         
-
         System.out.println("Escreva o numero de numeros que o array terá: ");
         quantidade = input.nextInt();
 
@@ -22,6 +21,5 @@ public class ExtraCurricularActivity2_1 {
             System.out.println(array[z]);   
         }
         input.close();
-
     }
 }
