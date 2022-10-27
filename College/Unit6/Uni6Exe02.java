@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Uni6Exe01 {
+public class Uni6Exe02 {
 
     //? Construtor
-    public Uni6Exe01() {
+    public Uni6Exe02() {
         
         //? TIPO ARRAY - NOME ARRAY - NOME DO METODO
         double[] array = lerArray();
@@ -67,6 +67,6 @@ public class Uni6Exe01 {
     }
     //? METODO PADRÃO INICIANDO O METODO CONTRUTOR
     public static void main(String[] args) {
-        new Uni6Exe01();
+        new Uni6Exe02();
     }
 }
