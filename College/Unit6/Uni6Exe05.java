@@ -16,7 +16,6 @@ public class Uni6Exe05 {
 
         lerRespostas(respostasMenino, respostasMenina, perguntas);
         calc(respostasMenino, respostasMenina);
-        
     }
 
     private void lerRespostas(String respostasMenino[], String respostasMenina[], String perguntas[]){
@@ -30,6 +29,7 @@ public class Uni6Exe05 {
             System.out.println("Digite as respostas da menina: ");
             respostasMenina[i] = input.next();
         }
+        input.close();
     }
 
     private void calc(String respostasMenino[], String respostasMenina[]){
@@ -81,7 +81,6 @@ public class Uni6Exe05 {
             System.out.println("Vocês se odeiam");
         }
     }
-
     public static void main(String[] args) {
         new Uni6Exe05();
     }
