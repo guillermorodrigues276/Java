@@ -5,13 +5,7 @@ public class Uni6Exe09 {
     private Uni6Exe09(){
         Scanner input = new Scanner(System.in);
 
-        //! 0 = GENERO
-        //! 1 = NOTA
-        //! 2 = IDADE
-
-        // ARRAY COM DIMENSÃO DE UMA COLUNA DE 30  POR 3 LINHAS
-
-        int array[][] = new int [30][3];
+        int array[][] = new int [3][3];
         ler(input, array);
 
         int mediaGeral = media(array);

@@ -48,7 +48,7 @@ public class Uni6Exe03 {
 
     private void valorAtualizado(double[] newArray){
         for(int i = 0; i < newArray.length; i++){
-            System.out.println("[" + (i + 1) + "]" + newArray[i]);
+            System.out.println("[" + (i + 1) + "] " + newArray[i]);
         }
     }
 

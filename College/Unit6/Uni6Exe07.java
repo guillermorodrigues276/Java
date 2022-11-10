@@ -10,53 +10,62 @@ public class Uni6Exe07 {
         }while (N < 1 || N > 20);
 
         
-        int vetor[] = new int[N];
+        int array[] = new int[N];
 
-        ler(vetor, input);
+        ler(array, input);
 
-        ordenar(vetor);
+        ordenar(array);
 
-        imprime(vetor);
+        imprime(array);
 
         
         
         input.close(); 
     }
 
-    private void ler(int vetor[], Scanner input){
+    private void ler(int array[], Scanner input){
         int valor = 0;
         boolean B = false;
 
-        for (int i = 0; i < vetor.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Digite um número: ");
             valor = input.nextInt();
-            for (int j = 0; j < vetor.length; j++) {
-                if(valor == vetor[j]){
+            for (int j = 0; j < array.length; j++) {
+                if(valor == array[j]){
                     B = true;
                 }
             }
             
             if(B){
-                System.out.println("Valor já existe no vetor...");
+                System.out.println("Valor já existe no array...");
                 i = i - 1;
                 B = false;
             }
             else{
-                vetor[i] = valor;
+                array[i] = valor;
             }
         }
     }
 
-    private void ordenar(int vetor[]){
-        Arrays.sort(vetor);            
-    }
-
-    private void imprime(int vetor[]){
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.print("["+ vetor[i] + "]");
+    
+    private void imprime(int array[]){
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("["+ array[i] + "]");
         }
     }
 
+    private void ordenar(int array[]){
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++)
+            for (int j = 0; j < n - i - 1; j++)
+                if (array[j] > array[j + 1]) {
+                    // swap arr[j+1] and arr[j]
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }           
+    }
+    
     public static void main(String[] args) {
         new Uni6Exe07();
     }
