@@ -14,7 +14,7 @@ public class JogoDaVelha{
             jogarPartida(input, mapa);
             System.out.println();  
             System.out.println("═════════════════════════════════════════════════");
-            System.out.println("Deseja jogar novamente (s/n)");
+            System.out.println("Deseja jogar novamente (s/n)?");
 
             jogarNovamente = input.next().charAt(0);
 
