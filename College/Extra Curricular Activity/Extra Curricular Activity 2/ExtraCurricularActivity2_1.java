@@ -17,7 +17,7 @@ public class ExtraCurricularActivity2_1 {
             array[i] = input.nextInt();
         }
         System.out.println("A ordem inversa é: ");
-        for(int z = quantidade-1; z >= 0; z--){
+        for(int z = (array.length-1); z >= 0; z--){
             System.out.println(array[z]);   
         }
         input.close();
