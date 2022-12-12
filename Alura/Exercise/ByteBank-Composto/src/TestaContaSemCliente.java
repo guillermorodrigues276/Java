@@ -1,7 +1,7 @@
 public class TestaContaSemCliente {
     public static void main(String[] args) {
         Conta contaDoCenourinha = new Conta();
-        System.out.println(contaDoCenourinha.mostraSaldo());
+        System.out.println(contaDoCenourinha.getSaldo());
 
         contaDoCenourinha.titular = new Cliente();
 
