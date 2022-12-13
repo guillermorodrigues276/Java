@@ -7,6 +7,7 @@ public class TesteSacaValorNegativo {
 
         // INFORMA ERRO POIS O SALDO ESTA PRIVADO, ENCAPSULADO EM OUTRO MÉTODO, FAZENDO COM QUE NÃO POSSA SER ACESSADO.
 
-        // System.out.println(conta.saldo);
+        conta.saldo += 1000;
+        System.out.println(conta.saldo);
     }
 }
