@@ -80,3 +80,4 @@ public class Tela extends JFrame{
 //? vai ser ser verificado pela biblioteca readArchive
 
 //? Ler arquivo com scanner, fazer verificação e achar um jeito de ver o arquivo .html
+//
