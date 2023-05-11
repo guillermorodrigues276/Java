@@ -20,11 +20,6 @@ public class ListarContatos extends JFrame{
 
     String [] colunas = {"Nome", "Telefone", "Email"};
 
-
-    public ListarContatos() {
-        super ("Contatos");
-    }
-
     public void criaJanela(){
 
         painelFundo = new JPanel();
