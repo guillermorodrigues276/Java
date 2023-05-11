@@ -61,10 +61,10 @@ public class Tela extends JFrame{
     };
 
     Object [][] dados = {
-        {"html", "1"},
-        {"body", "2"},
-        {"p", "3"},
-        {"br", "4"}
+        {"html",    "1"},
+        {"body",    "2"},
+        {"p",       "3"},
+        {"br",      "4"}
     };
 
     String [] colunas = {"Tag", "Numeros de Ocorrências"};
