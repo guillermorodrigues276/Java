@@ -8,6 +8,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import java.awt.Color;
+import java.awt.GridLayout;
 
 public class Tela extends JFrame{
 
@@ -38,15 +39,36 @@ public class Tela extends JFrame{
             JPanel panel = new JPanel();
             panel.setBounds(8,50,370,130);
             add(panel);
-    
-        setTitle("HTML Scanner");
-        setSize(400,450);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        getContentPane().setBackground(new Color(211,211,211));
-        setVisible(true);
-    }
 
+            //! Painel e Tabela
+            JPanel panel2 = new JPanel();
+            panel2.setLayout(new GridLayout(1,1));
+            panel2.setBounds(8,230,370,175);
+            JTable table = new JTable(dados,colunas);
+            JScrollPane scroll = new JScrollPane(table);
+            panel2.add(scroll);
+            getContentPane().add(panel2);
+            
+
+
+            //! Configuração JFrame
+            setTitle("HTML Scanner");
+            setSize(400,450);
+            setLocationRelativeTo(null);
+            setResizable(false);
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            getContentPane().setBackground(new Color(211,211,211));
+            setVisible(true);
+    };
+
+    Object [][] dados = {
+        {"html", "1"},
+        {"body", "2"},
+        {"p", "3"},
+        {"br", "4"}
+    };
+
+    String [] colunas = {"Tag", "Numeros de Ocorrências"};
     
     public static void main(String[] args) {
         Tela tela = new Tela();
