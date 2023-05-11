@@ -47,7 +47,7 @@ public class Tela extends JFrame{
             JTable table = new JTable(dados,colunas);
             JScrollPane scroll = new JScrollPane(table);
             panel2.add(scroll);
-            getContentPane().add(panel2);
+            add(panel2);
             
 
 
