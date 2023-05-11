@@ -49,8 +49,6 @@ public class Tela extends JFrame{
             panel2.add(scroll);
             add(panel2);
             
-
-
             //! Configuração JFrame
             setTitle("HTML Scanner");
             setSize(400,450);
