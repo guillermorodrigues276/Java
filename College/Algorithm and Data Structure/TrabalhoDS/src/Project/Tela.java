@@ -83,17 +83,3 @@ public class Tela extends JFrame{
 
 
 //? Apontar os erros fornecidos pelo arquivo
-
-//? Pegar a tag html de cima com um padrao [<???] e terminar com [???>] alguns caracteres (nao se sabe quantos)
-//? colocar na pilha os elementos iniciais e quando achar o final que termina com [???>] retirar o ultimo da pilha 
-//? até terminar a limpeza da pilha, os elementos que nao derem match é pra reportar uma exception e apontar os erros no blank space
-
-try {
-    Scanner arquivo = new Scanner(new File(archiveHtml.getText()));
-    while (arquivo.hasNextLine()) {
-        String linhaDoArquivo = arquivo.nextLine();
-        System.out.println(linhaDoArquivo);
-        taConteudo.append(linhaDoArquivo+"\n");
-    }catch (FileNotFoundException ex) {
-        System.out.println("Arquivo não encontrado");
-    }
