@@ -34,6 +34,7 @@ public class Tela extends JFrame{
             JLabel WriteOnBlackSpace = new JLabel("Arquivo bem formatado");
             WriteOnBlackSpace.setBounds(8,0,370,170);
             add(WriteOnBlackSpace);
+            WriteOnBlackSpace.setText("PEDRO PAULO"); //? Escrita pos verificação
 
             //! Painel em branco
             JPanel panel = new JPanel();
@@ -60,10 +61,10 @@ public class Tela extends JFrame{
     };
 
     Object [][] dados = {
-        {"html", "1"},
-        {"body", "2"},
-        {"p", "3"},
-        {"br", "4"}
+        {"html",    "1"},
+        {"body",    "2"},
+        {"p",       "3"},
+        {"br",      "4"}
     };
 
     String [] colunas = {"Tag", "Numeros de Ocorrências"};
@@ -72,3 +73,27 @@ public class Tela extends JFrame{
         Tela tela = new Tela();
     }
 }
+
+
+//? @test fazer um scanner no blankSpace que vai ler o que for escrito e armazenar em uma variavel,
+//? após isso ele ira verificar no outro scanner se o arquivo escrito contem um .html, se tiver vai
+//? vai ser ser verificado pela biblioteca readArchive
+
+//? Ler arquivo com scanner, fazer verificação e achar um jeito de ver o arquivo .html
+
+
+//? Apontar os erros fornecidos pelo arquivo
+
+//? Pegar a tag html de cima com um padrao [<???] e terminar com [???>] alguns caracteres (nao se sabe quantos)
+//? colocar na pilha os elementos iniciais e quando achar o final que termina com [???>] retirar o ultimo da pilha 
+//? até terminar a limpeza da pilha, os elementos que nao derem match é pra reportar uma exception e apontar os erros no blank space
+
+try {
+    Scanner arquivo = new Scanner(new File(archiveHtml.getText()));
+    while (arquivo.hasNextLine()) {
+        String linhaDoArquivo = arquivo.nextLine();
+        System.out.println(linhaDoArquivo);
+        taConteudo.append(linhaDoArquivo+"\n");
+    }catch (FileNotFoundException ex) {
+        System.out.println("Arquivo não encontrado");
+    }
