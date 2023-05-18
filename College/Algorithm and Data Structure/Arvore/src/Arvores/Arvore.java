@@ -1,36 +1,40 @@
 package Arvores;
 
-public class Arvore<T> {  // contribui��o do Martin
-    
-    private NoArvore<T> raiz;
-    
-    public Arvore() {
-    	raiz = null;
-    }
-    
-    public NoArvore<T> getRaiz() {
-        return raiz;
-    }
-    public void setRaiz(NoArvore<T> raiz) {
-        this.raiz = raiz;
-    }
-    public NoArvore<T> pertence(T info) {
-        if (this.vazia()) {
-            return null;
+    public class Arvore<T> {
+
+        private noArvore<T> raiz;
+
+        public Arvore(){
+            this.raiz = null;
         }
-        return this.raiz.pertence(info);
-    }
-    public boolean vazia() {
-        if (raiz == null) {
-            return true;
+
+        public noArvore<T> getRaiz(){
+            return raiz;
         }
-        return false;
-    }
-    @Override
-    public String toString() {
-    	if (this.vazia()) {
-            return null;
+
+        public void setRaiz(noArvore<T> raiz){
+            this.raiz = raiz;
         }
-        return this.raiz.imprimePre();
-    }
+
+        public noArvore<T> pertence(T elemento){
+            if(this.vazia()){
+                return null;
+            }
+            return this.raiz.pertence(elemento);
+        }
+
+        public boolean vazia(){
+            if(raiz == null){
+                return true;
+            }
+            return false;
+        }
+
+        @Override
+        public String toString() {
+            if(this.vazia()){
+                return null;
+            }
+            return this.raiz.imprimePre();
+        }
 }

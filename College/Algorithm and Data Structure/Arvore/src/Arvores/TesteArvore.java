@@ -1,4 +1,4 @@
-package a;
+package Arvores;
 
 public class TesteArvore {
     public static void main(String[] args) {
