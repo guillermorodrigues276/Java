@@ -1,12 +1,12 @@
 package Arvores;
 
-public class noArvore<T> {
+public class NoArvore<T> {
     
     private T info;
-    private noArvore<T> filho;
-    private noArvore<T> irmao;
+    private NoArvore<T> filho;
+    private NoArvore<T> irmao;
 
-    public noArvore(T info){
+    public NoArvore(T info){
         super();
         this.info = info;
         this.filho = null;
@@ -32,16 +32,16 @@ public class noArvore<T> {
         return str;
     }
 
-    public void inserirFilho(noArvore<T> sa){
+    public void inserirFilho(NoArvore<T> sa){
         sa.irmao = this.filho;
         this.filho = sa;
     }
 
-    public noArvore<T> pertence(T info){
+    public NoArvore<T> pertence(T info){
         if(this.info.equals(info)){
             return this;
         }
-        noArvore<T> no = null;
+        NoArvore<T> no = null;
         if(this.filho != null){
             no = this.filho.pertence(info);
         }
