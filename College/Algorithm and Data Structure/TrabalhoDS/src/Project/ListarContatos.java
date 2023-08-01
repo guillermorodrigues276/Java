@@ -22,11 +22,7 @@ public class ListarContatos extends JFrame{
 
     public void criaJanela(){
 
-        painelFundo = new JPanel();
-        painelFundo.setLayout(new GridLayout(1, 1));
-        tabela = new JTable(dados, colunas);
-        barraRolagem = new JScrollPane(tabela);
-        painelFundo.add(barraRolagem);
+         
 
         getContentPane().add(painelFundo);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
