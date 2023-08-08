@@ -54,7 +54,7 @@ public class App {
         System.out.println(object1.peso);
         System.out.println(object1.altura);
         System.out.println(object1.calcularImc());
-            
+
         input.close();
     }
 }
