@@ -31,17 +31,17 @@ No método main() da classe App utilize a classe Pessoa para calcular o IMC de u
 ## Question 2
 
 ```java
-// Copie a classe Pessoa do exercício anterior para um novo pacote. Implemente um novo programa (classe App) que solicite ao usuário sua altura e peso e exiba na tela qual é o IMC desta pessoa.
+Copie a classe Pessoa do exercício anterior para um novo pacote. Implemente um novo programa (classe App) que solicite ao usuário sua altura e peso e exiba na tela qual é o IMC desta pessoa.
 ```
 
 ## Question 3
 
 ```java
-// Num terceiro pacote, copie novamente a classe Pessoa da questão anterior e implemente um programa (classe App) que calcule o IMC de três pessoas. Para cada pessoa, o programa deve solicitar a altura e seu peso e em seguida, exibir o IMC calculado.
+Num terceiro pacote, copie novamente a classe Pessoa da questão anterior e implemente um programa (classe App) que calcule o IMC de três pessoas. Para cada pessoa, o programa deve solicitar a altura e seu peso e em seguida, exibir o IMC calculado.
 ```
 
 ## Question 4
 
 ```java
-// Copie a classe Pessoa do pacote da questão anterior para um novo pacote. Adapte e desenhe o diagrama de classes para criar um programa que solicite ao usuário o nome, altura e peso de três pessoas. Depois que o usuário informar os dados das três pessoas, exiba os dados informados pelo usuário (nome, peso, altura) e seu respectivo IMC em ordem inversa de digitação, isto é, exibir primeiro os dados da terceira pessoa e por último da primeira pessoa.
+Copie a classe Pessoa do pacote da questão anterior para um novo pacote. Adapte e desenhe o diagrama de classes para criar um programa que solicite ao usuário o nome, altura e peso de três pessoas. Depois que o usuário informar os dados das três pessoas, exiba os dados informados pelo usuário (nome, peso, altura) e seu respectivo IMC em ordem inversa de digitação, isto é, exibir primeiro os dados da terceira pessoa e por último da primeira pessoa.
 ```
