@@ -15,5 +15,7 @@ public class App {
         object2.peso = input.nextDouble();
 
         System.out.println(object2.calcularImc());
+
+        input.close();
     }
 }
