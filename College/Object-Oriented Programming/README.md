@@ -1,7 +1,7 @@
-    <h1 align="center">
+ <h1 align="center">
   <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-14-logo.png" alt="Logo" width="250">
   <br>
-  A repository to learning Java
+  A exercise list
   <br>
 </h1>
 
