@@ -21,11 +21,11 @@
 ## Question 1
 
 ```java
-// Implemente o diagrama de classes abaixo.
-// O método calcularImc() da classe Pessoa deverá calcular o IMC da pessoa, usando a fórmula: , onde:
-//  ● p é o peso da pessoa e
-//  ● h é a altura da pessoa
-// No método main() da classe App utilize a classe Pessoa para calcular o IMC de uma pessoa que tem 1,75 m de altura e 78 Kg. O programa deverá apresentar o IMC calculado na tela.
+Implemente o diagrama de classes abaixo.
+O método calcularImc() da classe Pessoa deverá calcular o IMC da pessoa, usando a fórmula: , onde:
+ ● p é o peso da pessoa e
+ ● h é a altura da pessoa
+No método main() da classe App utilize a classe Pessoa para calcular o IMC de uma pessoa que tem 1,75 m de altura e 78 Kg. O programa deverá apresentar o IMC calculado na tela.
 ```
 
 ## Question 2
