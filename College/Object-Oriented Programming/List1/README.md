@@ -1,13 +1,13 @@
  <h1 align="center">
   <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/java-14-logo.png" alt="Logo" width="250">
   <br>
-  A exercise list
+  A POO exercise list
   <br>
 </h1>
 
 <div align="center">
 
-| Java |
+| List |
 | :-| 
 | [`Question 1`](#question-1)  |
 | [`Question 2`](#question-2)                               | 
