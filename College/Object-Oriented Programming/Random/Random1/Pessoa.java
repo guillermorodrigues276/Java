@@ -1,4 +1,4 @@
-package Random.Random1;
+package Random1;
 public class Pessoa {
     
     double altura;

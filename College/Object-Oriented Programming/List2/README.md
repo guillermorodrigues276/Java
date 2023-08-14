@@ -7,7 +7,7 @@
 
 <div align="center">
 
-| List 1 |
+| List 2 |
 | :-| 
 | [`Question 1`](#question-1) |
 | [`Question 2`](#question-2) | 
