@@ -27,6 +27,7 @@ public class App {
         conta[1].transferir(conta[0], 1800);
 
         for(int i = 0; i < conta.length; i++){
+            System.out.println();
             System.out.println("--- DADOS ---");
             System.out.println();
             System.out.println("Titular: " + conta[i].getTitular());
