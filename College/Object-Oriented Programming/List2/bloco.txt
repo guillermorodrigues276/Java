@@ -1,0 +1,4 @@
+throw new IllegalArgumentException ("Mensagem");
+throw new RuntimeException ("Mensagem");
+
+Integer.parseInt('10') -> Converte texto pra numero
