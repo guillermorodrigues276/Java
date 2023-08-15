@@ -28,6 +28,14 @@ para que seja utilizada a nova classe Pessoa.
 
 ```java
 Com intuito de representar contas bancárias, implemente o diagrama de classes abaixo:
+|‾‾‾‾‾‾‾ Conta Bancaria ‾‾‾‾‾‾‾‾|
+| - numero : String             |
+| - titular : String            |
+| - saldo : double              |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| + getNumero() : String        |
+|
+
 1. O método getNumero() deve ser o método getter da variável de instância numero.
 2. O método setNumero() deve ser o método setter da variável de instância numero.
 3. O método getTitular() deve ser o método getter da variável de instância titular.
