@@ -50,7 +50,6 @@ public class ContaBancaria {
         if(valor <= this.saldo){
             sacar(valor);
             contaDestino.depositar(valor);
-            System.out.println("Transferencia realizda com sucesso!");
         }else if(valor > this.saldo){
             throw new IllegalArgumentException("Transferencia falhou, sem saldo.");
         }

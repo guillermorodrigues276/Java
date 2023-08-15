@@ -11,8 +11,6 @@
 | :-| 
 | [`Question 1`](#question-1) |
 | [`Question 2`](#question-2) | 
-| [`Question 3`](#question-3) |
-| [`Question 4`](#question-4) |
 
 </div>
 
@@ -21,27 +19,33 @@
 ## Question 1
 
 ```java
-Implemente o diagrama de classes abaixo.
-O método calcularImc() da classe Pessoa deverá calcular o IMC da pessoa, usando a fórmula: , onde:
- ● p é o peso da pessoa e
- ● h é a altura da pessoa
-No método main() da classe App utilize a classe Pessoa para calcular o IMC de uma pessoa que tem 1,75 m de altura e 78 Kg. O programa deverá apresentar o IMC calculado na tela.
+Partindo da solução da questão 4 da lista de exercícios 01, redesenhe o diagrama de classes adaptando a classe Pessoa
+para que utilize o conceito de encapsulamento. Em seguida, solucione novamente a questão 4 (da lista de exercícios 01)
+para que seja utilizada a nova classe Pessoa.
 ```
 
 ## Question 2
 
 ```java
-Copie a classe Pessoa do exercício anterior para um novo pacote. Implemente um novo programa (classe App) que solicite ao usuário sua altura e peso e exiba na tela qual é o IMC desta pessoa.
-```
-
-## Question 3
-
-```java
-Num terceiro pacote, copie novamente a classe Pessoa da questão anterior e implemente um programa (classe App) que calcule o IMC de três pessoas. Para cada pessoa, o programa deve solicitar a altura e seu peso e em seguida, exibir o IMC calculado.
-```
-
-## Question 4
-
-```java
-Copie a classe Pessoa do pacote da questão anterior para um novo pacote. Adapte e desenhe o diagrama de classes para criar um programa que solicite ao usuário o nome, altura e peso de três pessoas. Depois que o usuário informar os dados das três pessoas, exiba os dados informados pelo usuário (nome, peso, altura) e seu respectivo IMC em ordem inversa de digitação, isto é, exibir primeiro os dados da terceira pessoa e por último da primeira pessoa.
+Com intuito de representar contas bancárias, implemente o diagrama de classes abaixo:
+1. O método getNumero() deve ser o método getter da variável de instância numero.
+2. O método setNumero() deve ser o método setter da variável de instância numero.
+3. O método getTitular() deve ser o método getter da variável de instância titular.
+4. O método setTitular() deve ser o método setter da variável de instância titular.
+5. O método getSaldo() deve ser o método getter da variável de instância saldo.
+6. O método depositar() deve acrescentar valores ao saldo da conta bancária. O método depositar() deve
+recusar tentativas de depósito com valor negativo.
+7. O método sacar() deve subtrair valores do saldo da conta bancária. O método sacar() deve recusar tentativas
+de saque com valor negativo. Também deve recusar tentativas de saque que causem o saldo ficar negativo.
+8. O método transferir() deve ser implementado para transferir valores de uma conta bancária para outra.
+Considerar que a conta de origem é a conta onde será invocado o método transferir(), enquanto que a conta
+de destino será fornecida como argumento para o método transferir(). O valor a ser transferido também é
+fornecido como argumento.
+9. Crie um programa (classe App) que solicite ao usuário o número e titular de duas contas bancárias. Em seguida,
+efetue as seguintes operações:
+a. Realize depósitos na primeira conta nos valores de R$ 1.000,00 e R$ 700,00.
+b. Realize depósitos na segunda conta nos valores de R$ 5.000,00.
+c. Faça um saque na 2ª conta no valor de R$ 3.000,00.
+d. Transfira R$ 1.800,00 da 2ª conta para a 1ª conta.
+e. Exiba o titular de cada uma conta com o respectivo saldo da conta
 ```

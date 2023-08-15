@@ -29,8 +29,6 @@ public class App {
             System.out.println("Peso: " + object[i].getPeso());
             System.out.println("IMC: " + object[i].calcularImc());
         }
-
-
         input.close();
     }
 }
