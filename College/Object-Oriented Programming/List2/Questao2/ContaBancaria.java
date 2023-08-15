@@ -27,10 +27,10 @@ public class ContaBancaria {
     }
 
     public void depositar(double valor){
-        if (valor > 0 ){
-            this.saldo = this.saldo + valor;
-        }else{
+        if (valor <= 0 ){
             throw new IllegalArgumentException("Valor inválido.");
+        }else{
+            this.saldo = this.saldo + valor;
         }
     }
 
