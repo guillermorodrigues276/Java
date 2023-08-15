@@ -28,13 +28,21 @@ para que seja utilizada a nova classe Pessoa.
 
 ```java
 Com intuito de representar contas bancárias, implemente o diagrama de classes abaixo:
-|‾‾‾‾‾‾‾ Conta Bancaria ‾‾‾‾‾‾‾‾|
-| - numero : String             |
-| - titular : String            |
-| - saldo : double              |
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| + getNumero() : String        |
-|
+
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾ Conta Bancaria ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|                            
+| - numero : String                                                 |
+| - titular : String                                                |
+| - saldo : double                                                  |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|    
+| + getNumero() : String                                            |
+| + setNumero(numero : String)  : void                              |
+| + getTitular() : String                                           |
+| + setTitular(titular : String) : void                             |
+| + getSaldo() : double                                             |
+| + depositar(valor : double) : void                                |
+| + sacar(valor : double) : void                                    |
+| + transferir(contaDestino : ContaBancaria, valor : double) : void | 
+|___________________________________________________________________|
 
 1. O método getNumero() deve ser o método getter da variável de instância numero.
 2. O método setNumero() deve ser o método setter da variável de instância numero.
