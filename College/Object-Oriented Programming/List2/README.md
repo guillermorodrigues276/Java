@@ -34,10 +34,10 @@ Com intuito de representar contas bancárias, implemente o diagrama de classes a
 | - titular : String                                                |
 | - saldo : double                                                  |
 |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|    
-| + getNumero() : String                                            |
-| + setNumero(numero : String)  : void                              |
-| + getTitular() : String                                           |
-| + setTitular(titular : String) : void                             |
+| + getNumero() : String                                            ||‾‾‾‾‾‾‾‾‾‾ App ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|       
+| + setNumero(numero : String)  : void                              ||‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|       
+| + getTitular() : String                                           ||+ main(args : String[]) : void |
+| + setTitular(titular : String) : void                             ||_______________________________|
 | + getSaldo() : double                                             |
 | + depositar(valor : double) : void                                |
 | + sacar(valor : double) : void                                    |
