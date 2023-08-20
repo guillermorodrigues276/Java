@@ -1,7 +1,5 @@
 package Random2;
 
-import java.util.ArrayList;
-
 public class Conta {
     private int numeroConta;
     private double saldo;
@@ -51,6 +49,4 @@ public class Conta {
     public double getSaldo() {
         return saldo;
     }
-
-
 }
