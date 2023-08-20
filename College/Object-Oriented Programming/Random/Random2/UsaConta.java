@@ -25,6 +25,7 @@ public class UsaConta {
         while(variavelBoo){
             System.out.println("A lista está vazia? " + contas.isEmpty());
             System.out.println("Tamanho da lista: " + contas.size());
+            
             System.out.println("Escolha uma opção: ");
             System.out.println("1 - Usuario");
             System.out.println("2 - Usuario Novo");
