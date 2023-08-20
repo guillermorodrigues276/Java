@@ -1,0 +1,8 @@
+ArrayList<TIPO> nome = new ArrayList<>();
+nome.add(nomeDoObjeto);
+nome.add(nomeDoObjeto);
+nome.add(nomeDoObjeto);
+
+System.out.println(nome.size());
+System.out.println(nome.get(0).getNome());
+System.out.println(nome);

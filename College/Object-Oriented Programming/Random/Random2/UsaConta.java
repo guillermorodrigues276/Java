@@ -1,57 +1,94 @@
 package Random2;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UsaConta {
 
-    public static void mostrarConta(){
+    public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
-        Conta c1 = new Conta();
+        ArrayList<Conta> contas = new ArrayList<Conta>();
 
-        int opcao = 0;
+        // Conta c1 = new Conta(1, "Pedro");
+        // Conta c2 = new Conta(2, "João");
+
+        // contas.add(c1);
+        // contas.add(c2);
+        
+        Conta operacao = new Conta(0, null);
+        String escolhaUsuario;
+        int opcao, variavelConta, usuarioID;
+        double deposito, saque;
         boolean variavelBoo = true;
 
+        opcao = 0;
+        variavelConta = 0;
+        usuarioID = 0;
+        deposito = 0;
+        saque = 0;
+
+
+
         while(variavelBoo){
-            System.out.print("Digite a sua escolha: ");
-            System.out.println();
-            System.out.println("1 - Depositar");
-            System.out.println("2 - Sacar");
-            System.out.println("3 - Saldo");
-            System.out.println("4 - Sair do sistema");
+            System.out.println("Escolha uma opção: ");
+            System.out.println("1 - Usuario");
+            System.out.println("2 - Usuario Novo");
+            System.out.println("3 - Sair");
 
-            opcao = input.nextInt();
+            String opcaoPerguntaUsuario = input.next();
 
-            switch(opcao) {
-                case 1:
-                    System.out.println("Informe um valor para depositar: ");
-                    double valorDeposito = input.nextDouble();
-                    c1.depositar(valorDeposito);
-                    variavelBoo = true;
-                break;
+            // usuario existente
+            if(opcaoPerguntaUsuario.equals("1")){
+                
+                System.out.println("Qual seu ID?");
+                usuarioID = input.nextInt();
 
-                case 2:
-                    System.out.println("Informe um valor para sacar: ");
-                    double valorSaque = input.nextDouble();
-                    c1.sacar(valorSaque);
-                    variavelBoo = true;
-                break;
+                System.out.println("--- BANCO ---");
+                System.out.println("1 - Depositar");
+                System.out.println("2 - Sacar");
+                System.out.println("3 - Saldo");
+                
+                escolhaUsuario = input.next();
 
-                case 3:
-                    System.out.println("Saldo: " + c1.getSaldo());
-                    variavelBoo = true;
-                break;
-
-                case 4:
-                    System.out.println("Saindo do sistema");
-                    variavelBoo = false;
+                if(escolhaUsuario.equals("1")) {
+                    System.out.println("Valor do deposito: ");
+                    deposito = input.nextDouble();
+                    contas.get(usuarioID).depositar(deposito);
+                }
+                else if(escolhaUsuario.equals("2")) {
+                    System.out.println("Valor do saque: ");
+                    saque = input.nextDouble();
+                    operacao.sacar(saque);
+                }
+                else if(escolhaUsuario.equals("3")) {
+                    System.out.println("Saldo: " + operacao.getSaldo());
+                    
+                }
+                else{
+                    System.out.println("Erro");
+                    throw new IllegalArgumentException("Aconteceu um erro, tente novamente!");
+                }
             }
+            // novo usuario
+            else if(opcaoPerguntaUsuario.equals("2")){
+                int novoID = usuarioID + 1;
+
+                System.out.println("Seus ID de usuario sera: " + novoID);
+
+                System.out.println("Informe o nome do titular: ");
+                String titular = input.next();
+
+                contas.add(new Conta(novoID, titular));
+            }
+            else if(opcaoPerguntaUsuario.equals("3")){
+                variavelBoo = false;
+            }
+            else{
+                throw new IllegalArgumentException("Houve um erro!");
+            }
+        
         }
-    }
-
-    public static void main(String[] args) {
-        Conta c1 = new Conta();
-
-        mostrarConta();
     }
 }
