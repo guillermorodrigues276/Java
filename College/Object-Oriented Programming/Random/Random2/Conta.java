@@ -12,22 +12,31 @@ public class Conta {
             this.saldo = 0.0;
     }
     
-    public void depositar(double saldo){
+    public void depositar(double saldo) {
         if(saldo <= 0){
             throw new IllegalArgumentException("Não foi possivel depositar.");
         }else{
             this.saldo = this.saldo + saldo;
-            System.out.println("Depósito feito com sucesso!");
+            System.out.println("Depósito de R$" + this.saldo + " feito com sucesso!");
         }
     }
 
-    public void sacar(double saldo){
+    public void sacar(double saldo) {
         if(saldo <= 0){
             throw new IllegalArgumentException("Não foi possivel sacar.");
         }else{
             this.saldo = this.saldo - saldo;
-            System.out.println("Saque bem sucedido!");
+            System.out.println("Saque de R$" + this.saldo + " bem sucedido!");
         }
+    }
+
+    public void mostrarDados() {
+        System.out.println("-----------------------------");
+        System.out.println("Titular: " + getTitular());
+        System.out.println("ID da Conta: " + getNumeroConta());
+        System.out.println("Saldo: " + getSaldo());
+        System.out.println("-----------------------------");
+
     }
     
     public String getTitular() {
