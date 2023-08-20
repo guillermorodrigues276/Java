@@ -11,20 +11,11 @@ public class UsaConta {
 
         ArrayList<Conta> contas = new ArrayList<Conta>();
 
-        // Conta c1 = new Conta(1, "Pedro");
-        // Conta c2 = new Conta(2, "João");
-
-        // contas.add(c1);
-        // contas.add(c2);
-        
-        Conta operacao = new Conta(0, null);
         String escolhaUsuario;
-        int opcao, variavelConta, usuarioID;
+        int usuarioID;
         double deposito, saque;
         boolean variavelBoo = true;
 
-        opcao = 0;
-        variavelConta = 0;
         usuarioID = 0;
         deposito = 0;
         saque = 0;
@@ -32,6 +23,8 @@ public class UsaConta {
 
 
         while(variavelBoo){
+            System.out.println("A lista está vazia? " + contas.isEmpty());
+            System.out.println("Tamanho da lista: " + contas.size());
             System.out.println("Escolha uma opção: ");
             System.out.println("1 - Usuario");
             System.out.println("2 - Usuario Novo");
@@ -60,10 +53,10 @@ public class UsaConta {
                 else if(escolhaUsuario.equals("2")) {
                     System.out.println("Valor do saque: ");
                     saque = input.nextDouble();
-                    operacao.sacar(saque);
+                    contas.get(usuarioID).sacar(saque);
                 }
                 else if(escolhaUsuario.equals("3")) {
-                    System.out.println("Saldo: " + operacao.getSaldo());
+                    System.out.println("Saldo: " + contas.get(usuarioID).getSaldo());
                     
                 }
                 else{
@@ -73,7 +66,7 @@ public class UsaConta {
             }
             // novo usuario
             else if(opcaoPerguntaUsuario.equals("2")){
-                int novoID = usuarioID + 1;
+                int novoID = usuarioID++;
 
                 System.out.println("Seus ID de usuario sera: " + novoID);
 
