@@ -17,7 +17,7 @@ public class Conta {
             throw new IllegalArgumentException("Não foi possivel depositar.");
         }else{
             this.saldo = this.saldo + saldo;
-            System.out.println("Depósito de R$" + this.saldo + " feito com sucesso!");
+            System.out.println("Depósito de R$" + saldo + " feito com sucesso!");
         }
     }
 
@@ -26,7 +26,7 @@ public class Conta {
             throw new IllegalArgumentException("Não foi possivel sacar.");
         }else{
             this.saldo = this.saldo - saldo;
-            System.out.println("Saque de R$" + this.saldo + " bem sucedido!");
+            System.out.println("Saque de R$" + saldo + " bem sucedido!");
         }
     }
 

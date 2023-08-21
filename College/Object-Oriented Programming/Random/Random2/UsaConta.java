@@ -43,8 +43,8 @@ public class UsaConta {
                 System.out.println();
                 System.out.println("1 - Depositar");
                 System.out.println("2 - Sacar");
-                System.out.println("3 - Saldo");
-                System.out.println("4 - Transferir (INACESSIVEL)");
+                System.out.println("3 - Transferir");
+                System.out.println("4 - Saldo");
                 System.out.println("5 - Dados");
                 System.out.println();
                 
@@ -65,11 +65,20 @@ public class UsaConta {
                     contas.get(usuarioID).sacar(saque);
                     System.out.println();
                 }
-                // else if(escolhaUsuario.equals("")) { // TRANSFERIR
-                //     System.out.println("Para qual conta deseja transferir? (Digite o numero da conta)");
+                else if(escolhaUsuario.equals("3")) { // TRANSFERIR
+                    System.out.println("Transferencia ininializada, informe o ID da conta de saque.");
+                    int idContaSaque = input.nextInt();
 
-                // }
-                else if(escolhaUsuario.equals("3")) { // SALDO
+                    System.out.println("Para qual conta você gostaria de enviar?");
+                    int idContaDeposito = input.nextInt();
+
+                    System.out.println("Informe o valor de transferencia: ");
+                    double valorTransferencia = input.nextDouble();
+
+                    contas.get(idContaSaque).sacar(valorTransferencia);
+                    contas.get(idContaDeposito).depositar(valorTransferencia);
+                }
+                else if(escolhaUsuario.equals("4")) { // SALDO
                     System.out.println();
                     System.out.println("Saldo: " + contas.get(usuarioID).getSaldo());  
                     System.out.println();
