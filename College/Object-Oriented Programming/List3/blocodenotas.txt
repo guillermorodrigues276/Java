@@ -1,0 +1,11 @@
+JLabel -> Texto na tela getText(); -> Pega o elemento que estiver na escrita 
+
+JButton -> Botão
+
+JPanel -> Aonde vai todos os elementos
+
+JCheckBox -> 
+isSelected();
+
+JTextField -> Campo de escrita -> getText(); -> PEga o elemento que for escrito
+setEditable(false);
